@@ -1,4 +1,0 @@
-No modify the Form for mobile View 
-2-insert buttons
-3-input functioality/
-buttons functions ...
