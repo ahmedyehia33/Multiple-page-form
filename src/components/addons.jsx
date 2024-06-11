@@ -10,10 +10,7 @@ const Addons = () => {
             const dispatch = useDispatch();
             const navigate = useNavigate();
             const selectedAddons = useSelector(state => state.addons.selectedAddons);
-            useEffect(()=>{
-                console.log(addons);
-                console.log(selectedAddons)
-            })
+            
         
             const handleClick = (a)=>{
                 if(selectedAddons.some((selectedAddon) => selectedAddon.id === a.id )){

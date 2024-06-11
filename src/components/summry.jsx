@@ -11,9 +11,7 @@ const Summary = () => {
         const selectedAddons = useSelector(state => state.addons.selectedAddons);
         const {name , email , phone} = useSelector(state => state.form)
         const navigate = useNavigate();
-        useEffect(()=>{
-            console.log(selectedPlan , selectedAddons);
-        })
+        
         if (!selectedPlan) {
             return <div className='text-4xl text-sky-950 font-bold flex items-center justify-center w-full h-full'>Please Select a Plan</div>; // Add a loading state or a fallback UI
           }

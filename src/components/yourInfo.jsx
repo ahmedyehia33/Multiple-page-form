@@ -14,7 +14,7 @@ const YourInfo = () => {
 
     const {name , email, phone} = useSelector(state => state.form);
     useEffect(()=>{
-        console.log(name , email , phone, errors);
+        
         validate()
 
     }, [name, email,phone]);

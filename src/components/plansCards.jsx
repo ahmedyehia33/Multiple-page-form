@@ -12,12 +12,7 @@ const PlansCards = () => {
     const planType = useSelector(state => state.plans.planType);
 
     const dispatch = useDispatch();
-    useEffect(()=>{
-        console.log(plans);
-        console.log(selectedPlan);
-        console.log(planType)
-    });
-
+  
     return ( 
           <>
           <div className='flex gap-4'>
