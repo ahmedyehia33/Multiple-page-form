@@ -1,0 +1,82 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.side-bar{
+  background-image: url(../assets/images/bg-sidebar-desktop.svg);
+  background-position: center;
+  background-size: cover;
+}
+body{
+    background-color: #EEF5FF;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+    width:100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    
+}
+
+.form-heading{
+              font-family: "Ubuntu", sans-serif;
+              font-size: 2rem;
+              font-weight: 600;
+              color:rgb(41, 25, 53)
+}
+
+input{
+      
+      height:3rem;
+      width:100%;
+      margin-bottom: 3rem;
+      padding: 0.5rem;
+      border-radius: 10px;
+      margin-top: 0.5rem;
+}
+input:active{
+              border:none;
+}
+.card-heading{
+  color:rgb(45, 25, 61);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.selected{
+  border:1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+  body{display:flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width:50rem;
+    padding-top: 5rem;
+
+  }
+  .side-bar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width:100%;
+    background-position:bottom;
+    background-size:cover;
+  }
+  .container{
+              display:grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: 10rem 39rem;
+              width:100%;
+              padding:10px;
+              height:auto;
+              
+              
+  }
+  .info{
+    display: none;
+  }
+}
